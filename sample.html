@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ NAME }}</title>
+
+  <style>
+    @font-face {
+      font-family: 'Yekan';
+      font-weight: normal;
+      src: url('https://db.onlinewebfonts.com/t/3900805327d60d85482057d643f2a5f0.ttf');
+    }
+
+    @font-face {
+      font-family: 'Yekan';
+      font-weight: bold;
+      src: url("https://db.onlinewebfonts.com/t/41e49eab42867016423011dccc96c22a.ttf");
+    }
+
+    @font-face {
+      font-family: 'Yekan';
+      font-weight: 800;
+      src: url('https://db.onlinewebfonts.com/t/e1d06869ee86ac98052a5a1788122235.ttf');
+    }
+
+
+    body {
+      font-family: 'Yekan', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
+      font-weight: normal;
+      font-size: 1rem;
+      text-align: justify
+    }
+
+
+    .wrapper {
+      max-width: 600px;
+      margin-inline: 20px;
+      margin: auto auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: -1.25rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    .red-bg {
+      background-color: #E02628;
+      padding: 1.25rem 1.25rem 7rem 1.25rem;
+      border-radius: 55px 5px 55px 55px;
+      word-wrap: break-word;
+      margin-top: 1rem;
+      color: white;
+      position: relative;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+
+    }
+
+    .footer p {
+      word-wrap: break-word;
+    }
+
+    .user-img {
+      border-radius: 100%;
+      border: 5px solid red;
+    }
+
+    .img-side {
+      max-width: calc(100% - 250px - 2rem);
+      word-wrap: break-word;
+    }
+
+    .lamp {
+      position: absolute;
+      left: -1px;
+      bottom: -70px;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+
+</head>
+<body>
+<div class="wrapper">
+  <h1 style="color: red">اکالایی عزیز</h1>
+  <h2>امیدواریم حالتون خوب باشه</h2>
+  <p><b>{{ NAME }} عزیز</b> به عنوان <b>{{ TITLE }}</b> هم سفرمون شده تا در این مسیر همراهیمون کنه.
+    بریم که همسفر جدیدمون رو بشناسیم.
+    <br/></p>
+  <div class='red-bg'>
+    <p>
+      {{ INTRODUCTION }}
+    </p>
+    <div>
+      <img src="https://s2.uupload.ir/files/lamp_yubf.png" class="lamp"/>
+    </div>
+  </div>
+  <div class='footer'>
+    <img
+        src={{ IMAGE }}
+        width="250px"
+        height="250px"
+        alt="Employee Image"
+        class="user-img"
+    />
+    <p class="img-side">
+      اگه سوالی دارید یا احساس میکنید بهتره با <b>{{ NAME }} عزیز</b> ملاقاتی داشته باشید میتونید در <b>طبقه {{ FLOOR }}</b> باهاش
+      صحبت کنید.<br>
+      خوشحال میشم ما رو در خوش‌آمد گویی به <b>{{ NAME }} عزیز</b> همراهی کنید.</p>
+  </div>
+</div>
+</body>
+</html>
