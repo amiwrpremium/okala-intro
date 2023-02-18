@@ -1,155 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Okala!</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="https://okala.com/static/images/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://okala.com/static/images/icons/favicon-16x16.png">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Okala!</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://okala.com/static/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://okala.com/static/images/icons/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
-  <script>
-    tinymce.init({
-      selector: 'textarea#tiny',
-      plugins: [
-        'a11ychecker', 'advlist', 'advcode', 'advtable', 'autolink', 'checklist', 'export',
-        'lists', 'link', 'image', 'charmap', 'preview', 'anchor', 'searchreplace', 'visualblocks',
-        'powerpaste', 'fullscreen', 'formatpainter', 'help', 'wordcount'
-      ],
-      toolbar: 'undo redo | a11ycheck casechange blocks | bold italic backcolor | alignleft aligncenter alignright alignjustify |' +
-          'bullist numlist checklist outdent indent | removeformat | code table help',
-    });
-  </script>
-</head>
+    <script>
+      tinymce.init({
+        selector: 'textarea#tiny',
+        plugins: [
+          'a11ychecker', 'advlist', 'advcode', 'advtable', 'autolink', 'checklist', 'export',
+          'lists', 'link', 'image', 'charmap', 'preview', 'anchor', 'searchreplace', 'visualblocks',
+          'powerpaste', 'fullscreen', 'formatpainter', 'help', 'wordcount'
+        ],
+        toolbar: 'undo redo | a11ycheck casechange blocks | bold italic backcolor | alignleft aligncenter alignright alignjustify |' +
+            'bullist numlist checklist outdent indent | removeformat | code table help',
+      });
+    </script>
+  </head>
 
-<body id="page-top"><a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
-<nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
-  <div class="container">
-    <button data-bs-toggle="collapse" class="navbar-toggler d-none" data-bs-target="#"></button>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
-        <li class="nav-item sidebar-brand"><a class="nav-link active js-scroll-trigger" href="#page-top">Okala!</a></li>
-        <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#generator">Generator</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<header class="d-flex masthead">
-  <div class="container my-auto text-center">
-    <h1 class="mb-1" style="color: var(--bs-red);">Okala!</h1>
-    <h3 class="mb-5"><em>New Employee&nbsp;Announcement Generator</em></h3><a
-      class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#generator"
-      style="background: var(--bs-red);">Start!</a>
-    <div class="overlay"></div>
-  </div>
-</header>
-<section id="generator" class="content-section bg-light">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <div class="form-floating mb-3">
-          <input class="form-control" type="text" id="name" placeholder="name">
-          <label for="name">Name</label>
+  <body id="page-top"><a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
+    <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
+      <div class="container">
+        <button data-bs-toggle="collapse" class="navbar-toggler d-none" data-bs-target="#"></button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
+            <li class="nav-item sidebar-brand"><a class="nav-link active js-scroll-trigger" href="#page-top">Okala!</a>
+            </li>
+            <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#generator">Generator</a>
+            </li>
+          </ul>
         </div>
-        <div class="form-floating mb-3">
-          <input class="form-control" type="text" id="title" placeholder="title">
-          <label for="title">Title</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input class="form-control" type="text" id="floor" placeholder="floor">
-          <label for="floor">Floor</label>
-        </div>
-        <div class="form-floating mb-3">
-          <input class="form-control" type="text" id="image" placeholder="image">
-          <label for="image">Image Link</label>
-          <div class="mb-3">
-            <label for="tiny">Introduction</label>
-            <textarea id="tiny"></textarea>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col">
-              <div class="btn-group">
-                <button id="preview" class="btn btn-primary border-light btn-xl" type="button">
-                  Preview!
-                </button>
-                <button id="download" class="btn btn-primary border-light btn-xl" type="button">
-                  Download!
-                </button>
+      </div>
+    </nav>
+    <header class="d-flex masthead">
+      <div class="container my-auto text-center">
+        <h1 class="mb-1" style="color: var(--bs-red);">Okala!</h1>
+        <h3 class="mb-5"><em>New Employee&nbsp;Announcement Generator</em></h3><a
+          class="btn btn-primary btn-xl js-scroll-trigger" role="button" href="#generator"
+          style="background: var(--bs-red);">Start!</a>
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <section id="generator" class="content-section bg-light">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="name" placeholder="name">
+              <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="title" placeholder="title">
+              <label for="title">Title</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="floor" placeholder="floor">
+              <label for="floor">Floor</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input class="form-control" type="text" id="image" placeholder="image">
+              <label for="image">Image Link</label>
+            </div>
+            <div class="mb-3">
+              <input class="form-check-input" type="radio" id="remote" name="type" value="remote" checked>
+              <label for="remote" class="radio-inline">Remote</label>
+              <input class="form-check-input" type="radio" id="non-remote" name="type" value="non-remote">
+              <label for="non-remote" class="radio-inline">Non-remote</label>
+            </div>
+            <div class="form-floating mb-3">
+              <div class="mb-3">
+                <label for="tiny">Introduction</label>
+                <textarea id="tiny"></textarea>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <div class="btn-group">
+                    <button id="preview" class="btn btn-primary border-light btn-xl" type="button">
+                      Preview!
+                    </button>
+                    <button id="download" class="btn btn-primary border-light btn-xl" type="button">
+                      Download!
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<footer class="footer text-center">
-  <div class="container">
-    <ul class="list-inline mb-5">
-      <li class="list-inline-item">
-        <a class="link-light social-link rounded-circle" href="https://github.com/amiwrpremium"><i class="icon-social-github"></i>
-        </a>
-      </li>
-    </ul>
-    <p class="text-muted mb-0 small">Copyright &nbsp;© Okala 2022</p>
-    <p class="text-muted mb-0 small">AMiWR</p>
-  </div>
-  <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/stylish-portfolio.js"></script>
-<script type="application/javascript">
-  function generate() {
-    let name = document.getElementById("name").value;
-    let title = document.getElementById("title").value;
-    let floor = document.getElementById("floor").value;
-    let intro = tinymce.get("tiny").getContent();
-    let image = document.getElementById("image").value;
+    </section>
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="link-light social-link rounded-circle" href="https://github.com/amiwrpremium"><i
+                class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted mb-0 small">Copyright &nbsp;© Okala 2022</p>
+        <p class="text-muted mb-0 small">AMiWR</p>
+      </div>
+      <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/stylish-portfolio.js"></script>
+    <script type="application/javascript">
+      function generate() {
+        let name = document.getElementById("name").value;
+        let title = document.getElementById("title").value;
+        let floor = document.getElementById("floor").value;
+        let intro = tinymce.get("tiny").getContent();
+        let image = document.getElementById("image").value;
+        let _type = document.querySelector('input[name="type"]:checked').value.toString();
 
-    return fetch("./sample.html")
-        .then(
-            (response) => response.text()
-        ).then((sample) => {
-          sample = sample.replaceAll("{{ NAME }}", name);
-          sample = sample.replaceAll("{{ TITLE }}", title);
-          sample = sample.replaceAll("{{ FLOOR }}", floor);
-          sample = sample.replaceAll("{{ INTRODUCTION }}", intro);
-          sample = sample.replaceAll("{{ IMAGE }}", image);
+        let type = "";
+        if (_type === "remote") {
+          type = "hidden";
+        }
 
-          return sample;
+        console.log("name: " + name);
+        console.log("title: " + title);
+        console.log("floor: " + floor);
+        console.log("intro: " + intro);
+        console.log("image: " + image);
+        console.log("type: " + type);
+
+        return fetch("./sample.html")
+            .then(
+                (response) => response.text()
+            ).then((sample) => {
+              sample = sample.replaceAll("{{ NAME }}", name);
+              sample = sample.replaceAll("{{ TITLE }}", title);
+              sample = sample.replaceAll("{{ FLOOR }}", floor);
+              sample = sample.replaceAll("{{ INTRODUCTION }}", intro);
+              sample = sample.replaceAll("{{ IMAGE }}", image);
+              sample = sample.replaceAll("{{ TYPE }}", type);
+
+              return sample;
+            });
+      }
+
+      function preview() {
+        let preview = window.open("", "Preview");
+        generate().then((sample) => {
+          preview.document.write(sample);
         });
-  }
+      }
 
-  function preview() {
-    let preview = window.open("", "Preview");
-    generate().then((sample) => {
-      preview.document.write(sample);
-    });
-  }
+      function download() {
+        generate().then((sample) => {
+          let name = document.getElementById("name").value;
+          let a = document.createElement('a');
+          a.href = "data:application/octet-stream," + encodeURIComponent(sample);
+          a.download = name + ".html";
+          a.click();
+        });
+      }
 
-  function download() {
-    generate().then((sample) => {
-      let name = document.getElementById("name").value;
-      let a = document.createElement('a');
-      a.href = "data:application/octet-stream," + encodeURIComponent(sample);
-      a.download = name + ".html";
-      a.click();
-    });
-  }
-
-  document.getElementById("preview").addEventListener("click", preview);
-  document.getElementById("download").addEventListener("click", download);
+      document.getElementById("preview").addEventListener("click", preview);
+      document.getElementById("download").addEventListener("click", download);
 
 
-</script>
-</body>
+    </script>
+  </body>
 
 </html>
